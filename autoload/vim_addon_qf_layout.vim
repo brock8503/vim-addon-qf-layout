@@ -8,8 +8,9 @@ fun! vim_addon_qf_layout#Quickfix()
   setlocal colorcolumn=
   setlocal nowrap
   setlocal nolist
-
-  redraw!
+  
+  " This changes the size of the quickfix to fill the whole window
+  " redraw!
 
   exec 'noremap <silent> <buffer> '. s:c.lhs_cycle .' :call vim_addon_qf_layout#Cycle()<cr>'
 
